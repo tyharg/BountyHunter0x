@@ -7,6 +7,9 @@ Created by htelsiz and tyharg.
 ### Deployed Smart Contract (Ropsten)
 https://ropsten.etherscan.io/address/0xfd1177ae3b4e6ac333680947eccfb5c76b61803b
 
+### Internal Transactions (Ropsten)
+https://ropsten.etherscan.io/address/0xfd1177ae3b4e6ac333680947eccfb5c76b61803b#internaltx
+
 ### Dependencies
 
 1. Solidity
