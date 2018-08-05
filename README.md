@@ -9,6 +9,7 @@ Created by htelsiz and tyharg.
 1. Solidity
 2. web3js
 3. Infura
+4. MetaMask
 
 ### Usage
 
