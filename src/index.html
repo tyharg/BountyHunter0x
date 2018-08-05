@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+      href="images/favicon.ico">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bounty Hunter 0x</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function () {
+  var floatingBanners = $(".floating");
+var upperBound = 0;
+var lowerBound = 500;
+function bannerMoveDown(){
+  floatingBanners.animate({top:lowerBound}, 10000, 'linear', bannerMoveUp);
+}
+function bannerMoveUp(){
+  floatingBanners.animate({top:upperBound}, 10000, 'linear', bannerMoveDown);
+}
+bannerMoveDown();
+});
+
+
+</script>
+
+
+
+    <script type="text/javascript">
+      function openPage(pageName, elmnt, color) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+
+
+var doSth = function () {
+
+  var $md = $(".panel-body");
+  // Do something here
+};
+setInterval(doSth, 1000);//1000 is miliseconds
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+  <header>
+    <div class="container-fluid position-relative no-side-padding">
+
+
+      <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
+
+       <li style="float:right; padding-top: 17px; padding-right: 20px;"> <a class="merked">Killfeed:  </a>   </li>
+
+      <ul class="main-menu visible-on-click" id="main-menu">
+
+        <li style=""><a href="https://etherscan.io/address/0x99c65c81c15cB84DEEC9809fDF755C286B280087">Smart Contract</a></li>
+
+        <li> <a  class="bounty" style="">  Current Bounty: </a> </li>
+
+      </ul><!-- main-menu -->
+
+    </div>
+
+    </div><!-- conatiner -->
+  </header>
+
+
+</div>
+
+<div id="Market" >
+  <div class="row">
+    <br>
+    <br>
+  </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-sm-8 col-sm-push-2">
+
+          <h2  class="text-center">Bounty Hunter 0x
+            <img  src="target.png"
+                  style="width:30px!important;
+                         margin-left: -15px;
+                         margin-bottom: 40px;" height="30">   </img>
+          </h2>
+
+
+
+
+          <div class="terminal">
+            <span class="term">Rules: </span>
+</br>
+<span class="term">8 Bounty Hunters.</span>
+<span class="term">Prices double upon hire.</span>
+<span class="term">30% of new hire funds go to the bounty pool, the rest go to the previous owner.</span>
+<span class="term">Each new hire comes with a ~20% chance of killing another player and taking the bounty.</span>
+<span class="term">You can't kill your own bounty hunters.</span>
+<span class="term">Killed players are reset back to default price and state.</span>
+<span class="term">The current owner of the mysterious emblem has an increased chance of taking the bounty.</span>
+<span class="term">When the contract balance is over 0.1 ETH, two players will be killed when the bounty</span>
+<span class="term">is claimed. We call this a double killshot.</span>
+<span class="term">The current owner of the mysterious emblem cannot be killed unless he is killed</span>
+<span class="term">by a double killshot.</span>
+<span class="term">When a double killshot occurs, the bounty hunter who is killed first will</span>
+<span class="term">kill the hunter above or below him.</span>
+
+<br>
+
+<span class="input">[0x@ip-172-23-54-32 ~]$</span>  <span class="blinking-cursor">|</span>
+
+          </div>
+
+<div class="container">
+      <div id="emblemRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="emblemTemplate" style="display: none;">
+      <div class="col-md-3 col-md-offset-2">
+        <div class="panel panel-primary text-center">
+ <div class="panel-body">
+            <h2 class="panel-title">Scrappy</h2>
+            <strong></strong> <h4 class="owned-by" data-id="0"></h4>
+
+            <img alt="140x140" width = "254" height = "240" data-src="holder.js/140x140" class="img-rounded img-center fighter" style = "height: 240px; width:240px; src="" data-holder-rendered="true">
+            <br/><br/>
+
+            <a class="buy-emblem" style="cursor: pointer; font-size:20px;" type="button" data-id="0">BUY EMBLEM - .01</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+          <br/>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+<div class="row">
+      <div id="hunterRow" class="row">
+        <!-- PETS LOAD HERE -->
+      </div>
+    </div>
+
+    <div id="hunterTemplate" style="display: none;">
+      <div class="col-sm-4 col-md-4 col-lg-3 floating">
+        <div class="panel panel-primary text-center panel-pet ">
+ <div class="panel-body">
+            <h2 class="panel-title">Scrappy</h2>
+            <strong></strong> <p class="owned-by" data-id="0"></p>
+
+            <img alt="140x140" width = "250" height = "240" data-src="holder.js/140x140" class="img-rounded img-center fighter" style="width: 100%;" src="" data-holder-rendered="true">
+            <br/><br/>
+
+            <button class=" btn-adopt btn-block" type="button" data-id="0"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+  <footer>
+
+    <div class="container" >
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6">
+          <div class="footer-section">
+
+            <a class="logo" href="#"><img src="target.png" alt="Logo Image" style="width:50px;height:50px;"></a>
+            <p class="copyright">Bounty Hunter 0x @ 2018</p>
+
+
+          </div><!-- footer-section -->
+        </div><!-- col-lg-4 col-md-6 -->
+
+      </div>
+
+
+    </div><!-- container -->
+  </footer>
+
+</body>
+</html>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+[
+  {
+    "id": 0,
+    "name": "Pepe",
+    "picture": "images/pepe.png"
+  },
+  {
+    "id": 1,
+    "name": "Wojak",
+    "picture": "images/wojak.png"
+  },
+  {
+    "id": 2,
+    "name": "Wise Old Man",
+    "picture": "images/wiseoldman.png"
+  },
+  {
+    "id": 3,
+    "name": "Trump",
+    "picture": "images/trump.png"
+  },
+  {
+    "id": 4,
+    "name": "Putin",
+    "picture": "images/putin.png"
+  },
+  {
+    "id": 5,
+    "name": "Osama Bin Laden",
+    "picture": "images/binladen.png"
+ },
+  {
+    "id": 6,
+    "name": "Sam Hyde",
+    "picture": "images/samhyde.png"
+  },
+  {
+    "id": 7,
+    "name": "Jesus Christ",
+    "picture": "images/jesus.png"
+  }
+
+]
