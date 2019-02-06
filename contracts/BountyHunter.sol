@@ -47,6 +47,13 @@ library SafeMath {
 }
 
 
+/**#################################################################
+ *
+ * BountyHunter0x
+ *    Authored by Tyler Hargreaves and Hakan Telsiz
+ */
+
+
 contract BountyHunter {
 
   function() public payable { }
